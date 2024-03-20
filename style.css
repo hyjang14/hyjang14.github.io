@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Jua&family=Sunflower:wght@300&display=swap');
 
 body {
-    font-size: 150%;
+    font-size: 23px;
 
     /*배경 구름 설정*/
     background-image: url("http://www.pngmart.com/files/1/Clouds-PNG-Pic.png"), url("https://myphuket-holiday.com/wp-content/uploads/revslider/homepage/cloud.png"), url("http://pngimg.com/uploads/cloud/cloud_PNG7.png"), url("https://myphuket-holiday.com/wp-content/uploads/revslider/homepage/cloud.png"), linear-gradient(to bottom, #0984e3, #81ecec);
@@ -19,6 +19,35 @@ body {
       background-size: 100%, 40%, 50%, 20%, cover;
     }
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 화면 너비가 1023px 이하일 때 이미지 크기 조절 */
+@media screen and (max-width: 1023px) {
+    img {
+        max-width: 80%;
+    }
+    body {
+        font-size: 18px;
+    }
+}
+
+/* 화면 너비가 480px 이하일 때 이미지 크기 조절 */
+@media screen and (max-width: 480px) {
+    img {
+        max-width: 60%;
+    }
+    body {
+        font-size: 9px;
+    }
+    h1 {
+        font-size: 13px;
+    }
+}
+
 .box {
     /*글꼴 설정*/
     font-family: "Jua", sans-serif;
