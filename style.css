@@ -25,6 +25,7 @@ img {
     height: auto;
 }
 
+/* 미디어 쿼리 사용하여 반응형으로 제작 */
 /* 화면 너비가 1023px 이하일 때 이미지 크기 조절 */
 @media screen and (max-width: 1023px) {
     img {
